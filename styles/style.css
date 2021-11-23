@@ -81,11 +81,10 @@ header img {
 nav {
   position: sticky;
   top: 0;
-  border-bottom: 2px solid #242424;
 }
 
 nav ul {
-  background-color: white;
+  background-color: #282828;
   overflow: hidden;
   padding: 0;
   margin: 0;
@@ -98,8 +97,8 @@ nav ul li {
 }
 
 nav ul li a {
-  background-color: white;
-  color: #242424;
+  background-color: #282828;
+  color: white;
   display: block;
   padding: 20px 25px;
   font-family: 'Shippori Antique B1', sans-serif;
@@ -110,12 +109,11 @@ nav ul li a {
 
 nav ul li a:hover {
   color: rgb(145, 145, 145);
-  transform: scaleX(1.05);
   transition: 0.3s ease all;
 }
 
 nav ul li a.active {
-  background-color: #242424;
+  background-color: rgb(121, 121, 121);
   color: white;
   transition: 0.3s ease all;
 }
