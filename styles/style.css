@@ -67,10 +67,13 @@ Date: 2021-11-23
 /*---- Body ----*/
 body {
   background-image: url(../images/blackhole_doppler_website.png);
+  background-color: white;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 101%;
+  background-position-x: center;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 html {
@@ -78,7 +81,6 @@ html {
 }
 
 /*---- Divs & Sections ----*/
-
 section {
   display: block;
 }
@@ -97,25 +99,32 @@ div p {
 div.nav {
   background-color: white;
   margin: auto;
-  margin-top: 0px;
+  top: 0;
+  position: sticky;
+  z-index: 5;
+}
+
+div.content {
+  display: flex;
+  background-color: white;
 }
 
 div.section {
   margin: auto;
   width: 1100px;
-  /*border-right: 2px solid black;
-  border-left: 2px solid black;*/
 }
 
 iframe {
   top: 0;
   float: right;
+  margin: 50px 0 50px 0;
 }
 
 /*---- Alignments ----*/
 .centered {
-  margin: auto;
-  width: 500px;
+  display: inline-block;
+  text-align: center;
+  width: 1100px;
 }
 
 .centered h1 {
@@ -138,15 +147,9 @@ iframe {
 header img {
   display: block;
   margin: auto;
-  margin-bottom: 50px;
 }
 
 /*---- Nav bar ----*/
-nav {
-  position: sticky;
-  top: 0;
-}
-
 nav ul {
   background-color: #282828;
   overflow: hidden;
@@ -163,7 +166,7 @@ nav ul li {
 nav ul li a {
   color: white;
   display: block;
-  padding: 20px 25px;
+  padding: 20px 20px;
   font-family: 'Shippori Antique B1', sans-serif;
   text-align: center;
   text-decoration: none;
@@ -199,5 +202,57 @@ hr {
   color: #242424;
   background-color: #242424;
   border: 1px solid #242424;
-  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*---- Images ----*/
+img.render {
+  width: 40%;
+  height: auto;
+  transform-origin: center;
+  box-shadow: 0 3px 8px black;
+}
+
+img.render:hover {
+  cursor: pointer;
+}
+
+.render.l { /* Left */
+  float: left;
+  margin: 50px 0 50px 50px;
+}
+
+.render.r { /* Right */
+  float: right;
+  margin: 50px 50px 50px 0;
+}
+
+/*---- Media Queries ----*/
+@media screen and (max-width: 1024px) {
+  .loader img {
+    display: block;
+    transform: scale(0.75);
+    margin-top: -25px;
+  }
+}
+
+@media screen and (max-width: 1900px) {
+  body {
+    background-image: url(../images/blackhole_doppler_website.png);
+    background-size: 200%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  body {
+    background-image: url(../images/blue_background.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+  }
 }
