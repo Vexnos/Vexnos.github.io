@@ -127,9 +127,7 @@ iframe {
 
 /*---- Alignments ----*/
 .centered {
-  display: inline-block;
   text-align: center;
-  width: 1100px;
 }
 
 .centered h1 {
@@ -212,10 +210,16 @@ hr {
   color: #242424;
   background-color: #242424;
   border: 1px solid #242424;
+  width: 1100px;
 }
 
 a {
   text-decoration: none;
+}
+
+.block {
+  display: inline-block;
+  width: 1100px;
 }
 
 li { font-family: 'Shippori Antique B1', sans-serif; }
@@ -269,5 +273,39 @@ img.render {
     background-size: 100%;
     background-repeat: no-repeat;
     background-position-x: center;
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  div.section {
+    width: 800px;
+  }
+
+  section {
+    width: 800px;
+  }
+
+  hr {
+    width: 800px;
+  }
+
+  iframe {
+    display: block;
+    float: none;
+    margin: auto;
+  }
+
+  iframe.bottom {
+    margin-bottom: 50px;
+  }
+
+  .left {
+    float: none;
+    display: block;
+    margin: auto;
+  }
+
+  .block {
+    width: 800px;
   }
 }
