@@ -201,6 +201,11 @@ footer p {
   text-align: center;
 }
 
+footer ul {
+  list-style-type: none;
+  text-align: center;
+}
+
 /*---- Other ----*/
 hr {
   height: 0;
@@ -241,7 +246,7 @@ img.render {
 }
 
 /*---- Media Queries ----*/
-@media screen and (max-width: 1450px) {
+@media screen and (max-width: 1440px) {
   .loader img {
     display: block;
     transform: scale(0.75);
