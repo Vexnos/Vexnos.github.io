@@ -213,6 +213,8 @@ a {
   text-decoration: none;
 }
 
+li { font-family: 'Shippori Antique B1', sans-serif; }
+
 /*---- Images ----*/
 img.render {
   width: 40%;
@@ -221,18 +223,25 @@ img.render {
   box-shadow: 0 3px 8px black;
 }
 
-.render.l { /* Left */
+.l { /* Left */
   float: left;
   margin: 50px 0 50px 50px;
 }
 
-.render.r { /* Right */
+.r { /* Right */
   float: right;
   margin: 50px 50px 50px 0;
 }
 
+.c { /* Center */
+  display: block;
+  margin: 30px auto 30px auto;
+  height: auto;
+  width: 25%;
+}
+
 /*---- Media Queries ----*/
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1440px) {
   .loader img {
     display: block;
     transform: scale(0.75);
