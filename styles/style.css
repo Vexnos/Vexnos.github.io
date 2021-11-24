@@ -241,7 +241,7 @@ img.render {
 }
 
 /*---- Media Queries ----*/
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1450px) {
   .loader img {
     display: block;
     transform: scale(0.75);
