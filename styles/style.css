@@ -8,6 +8,10 @@ Date: 2021-11-23
 @import url('https://fonts.googleapis.com/css2?family=Shippori+Antique+B1&display=swap');
 
 /*---- Loading Screen ----*/
+body.scroll {
+  overflow-y: auto;
+}
+
 .content {
   display: none;
 }
@@ -74,6 +78,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 html {
@@ -214,10 +219,6 @@ img.render {
   height: auto;
   transform-origin: center;
   box-shadow: 0 3px 8px black;
-}
-
-img.render:hover {
-  cursor: pointer;
 }
 
 .render.l { /* Left */
