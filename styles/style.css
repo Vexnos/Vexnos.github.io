@@ -269,6 +269,16 @@ img.render {
   width: 25%;
 }
 
+.skills {
+  height: auto;
+  width: 5%;
+  transform-origin: center;
+}
+
+.skills:hover {
+  cursor: pointer;
+}
+
 /*---- Media Queries ----*/
 @media screen and (max-width: 1440px) {
   .loader img {
