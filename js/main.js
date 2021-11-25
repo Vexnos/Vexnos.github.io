@@ -13,7 +13,7 @@ toggle.addEventListener('click', () => {
 });
 
 /*---- Loading Screen ----*/
-window.addEventListener("load", function(){
+window.addEventListener("load", () => {
   const loader = document.querySelector(".loader");
   const content = document.querySelector(".content");
   const body = document.querySelector(".main");
