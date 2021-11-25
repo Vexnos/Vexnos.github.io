@@ -341,7 +341,7 @@ img.render {
   }
 
   .block {
-    width: 800px;
+    width: 100%;
   }
 }
 
