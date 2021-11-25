@@ -399,6 +399,12 @@ img.render {
     margin-left: 10px;
     margin-right: 0;
   }
+
+  .skills {
+    height: auto;
+    width: 8%;
+    transform-origin: center;
+  }
 }
 
 /* Mobile Phones */
@@ -440,5 +446,11 @@ img.render {
   header img {
     height: auto;
     width: 50%;
+  }
+
+  .skills {
+    height: auto;
+    width: 10%;
+    transform-origin: center;
   }
 }
