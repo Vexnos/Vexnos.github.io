@@ -190,6 +190,10 @@ nav ul li a.active {
   transition: 0.3s ease all;
 }
 
+nav ul li a.active:hover {
+  cursor: default;
+}
+
 .toggle-btn {
   margin: 0px auto 0 auto;
   display: none;
@@ -366,10 +370,28 @@ img.render {
   .links {
     display: none;
     width: 100%;
+    animation: 0.5s fade-out;
   }
 
   .links.clicked {
     display: block;
+    animation: 0.5s fade-in;
+  }
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    } to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fade-out {
+    from {
+      opacity: 1;
+    } to {
+      opacity: 0;
+    }
   }
 
   nav ul li {
