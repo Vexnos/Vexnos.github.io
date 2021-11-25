@@ -538,4 +538,8 @@ img.render:hover {
     width: 10%;
     transform-origin: center;
   }
+
+  .modal {
+    font-size: 12pt;
+  }
 }
