@@ -91,9 +91,12 @@ section {
 }
 
 section h1 {
-  font-family: 'Shippori Antique B1', sans-serif;
   margin-left: 30px;
   margin-right: 30px;
+}
+
+section h2 {
+  font-size: 14pt;
 }
 
 div p {
@@ -122,10 +125,6 @@ iframe {
   text-align: center;
 }
 
-.centered h1 {
-  text-align: center;
-}
-
 .left {
   margin-left: 100px;
   width: 400px;
@@ -146,6 +145,10 @@ iframe {
 header img {
   display: block;
   margin: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Shippori Antique B1', sans-serif;
 }
 
 /*---- Nav bar ----*/
@@ -187,7 +190,7 @@ nav ul li a:hover {
 
 nav ul li a.active {
   background-color: rgb(224, 224, 224);
-  color: black;
+  color: #242424;
   transition: 0.3s ease all;
 }
 
@@ -196,7 +199,7 @@ nav ul li a.active:hover {
 }
 
 .toggle-btn {
-  margin: 0px auto 0 auto;
+  margin: 0 auto 0 auto;
   display: none;
   flex-direction: column;
   justify-content: space-between;
@@ -234,7 +237,7 @@ hr {
   height: 0;
   color: #242424;
   background-color: #242424;
-  border: 1px solid #242424;
+  border-bottom: 1px solid #242424;
   width: 1100px;
 }
 
@@ -411,6 +414,7 @@ img.render:hover {
 
 /* Tablets */
 @media screen and (max-width: 810px) {
+  /* Divs & Sections */
   div.section {
     width: 500px;
   }
@@ -427,34 +431,42 @@ img.render:hover {
     width: 500px;
   }
 
+  /* Nav Bar */
   .toggle-btn {
     display: flex;
   }
 
   .links {
-    display: none;
     width: 100%;
-    animation: 0.5s fade-out;
   }
 
-  .links.clicked {
-    display: block;
-    animation: 0.5s fade-in;
+  nav ul .links.clicked {
+    height: 65px;
   }
 
-  @keyframes fade-in {
+  nav ul .links.clicked {
+    height: 192px;
+    animation: 0.2s move-down linear;
+  }
+
+  nav ul .links {
+    height: 0;
+    animation: 0.2s move-up linear;
+  }
+
+  @keyframes move-up {
     from {
-      opacity: 0;
+      height: 192px;
     } to {
-      opacity: 1;
+      height: 0px;
     }
   }
 
-  @keyframes fade-out {
+  @keyframes move-down {
     from {
-      opacity: 1;
+      height: 0px;
     } to {
-      opacity: 0;
+      height: 192px;
     }
   }
 
@@ -476,6 +488,7 @@ img.render:hover {
     width: 50%;
   }
 
+  /* Images */
   .render.l {
     margin-right: 10px;
     margin-left: 0;
@@ -533,6 +546,8 @@ img.render:hover {
     height: auto;
     width: 50%;
   }
+
+  /* Images */
 
   .skills {
     height: auto;
