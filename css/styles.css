@@ -153,11 +153,12 @@ nav {
   top: 0;
   position: sticky;
   z-index: 5;
-  background-color: #282828;
+  background-color: white;
+  border-bottom: 2px solid #242424;
 }
 
 nav ul {
-  background-color: #282828;
+  background-color: white;
   overflow: hidden;
   padding: 0;
   margin: 0;
@@ -170,7 +171,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: white;
+  color: #242424;
   display: block;
   padding: 20px 20px;
   font-family: 'Shippori Antique B1', sans-serif;
@@ -180,13 +181,13 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: rgb(145, 145, 145);
+  color: rgb(109, 109, 109);
   transition: 0.3s ease all;
 }
 
 nav ul li a.active {
-  background-color: rgb(121, 121, 121);
-  color: white;
+  background-color: rgb(224, 224, 224);
+  color: black;
   transition: 0.3s ease all;
 }
 
@@ -201,13 +202,13 @@ nav ul li a.active:hover {
   justify-content: space-between;
   width: 31px;
   height: 21px;
-  border: 20px solid #282828;
+  border: 20px solid white;
 }
 
 .toggle-btn .bar {
   height: 3px;
   width: 100%;
-  background-color: white;
+  background-color: #242424;
   border-radius: 10px;
 }
 
