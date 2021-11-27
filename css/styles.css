@@ -570,6 +570,33 @@ img.render:hover {
     width: 100%;
   }
 
+  /* Nav Bar */
+  nav ul .links.clicked {
+    height: 176px;
+    animation: 0.15s move-down linear;
+  }
+
+  nav ul .links {
+    height: 0;
+    animation: 0.15s move-up linear;
+  }
+
+  @keyframes move-up {
+    from {
+      height: 176px;
+    } to {
+      height: 0px;
+    }
+  }
+
+  @keyframes move-down {
+    from {
+      height: 0px;
+    } to {
+      height: 192px;
+    }
+  }
+
   /* Decrease logo size */
   header img {
     height: auto;
