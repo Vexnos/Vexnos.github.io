@@ -156,12 +156,13 @@ nav {
   top: 0;
   position: sticky;
   z-index: 5;
-  background-image: linear-gradient(to right, rgba(124, 218, 255, 1), rgb(65, 62, 112), rgba(255, 166, 0, 1));
+  /*background: linear-gradient(to right, rgba(124, 218, 255, 1), rgb(65, 62, 112), rgba(255, 166, 0, 1))*/;
+  background: linear-gradient(to right, rgb(81, 206, 223), rgb(49, 92, 121), rgb(81, 206, 223));
   border-bottom: 2px solid #242424;
 }
 
 nav ul {
-  background-image: linear-gradient(to right, rgba(124, 218, 255, 1), rgb(65, 62, 112), rgba(255, 166, 0, 1));
+  background: linear-gradient(to right, rgb(81, 206, 223), rgb(49, 92, 121), rgb(81, 206, 223));
   overflow: hidden;
   padding: 0;
   margin: 0;
@@ -234,10 +235,11 @@ footer a {
 
 /*---- Other ----*/
 hr {
-  height: 0;
-  color: #242424;
+  height: 1px;
+  background: linear-gradient(to right, rgb(81, 206, 223), rgb(49, 92, 121), rgb(81, 206, 223));;
+  /*color: #242424;
   background-color: #242424;
-  border-bottom: 1px solid #242424;
+  border-bottom: 1px solid #242424;*/
   width: 1100px;
 }
 
