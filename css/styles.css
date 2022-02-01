@@ -219,7 +219,9 @@ nav ul li a.active:hover {
 /*---- Footer ----*/
 footer {
   clear: both;
-  border-top: 2px solid black;
+  border-top: 2px solid transparent;
+  border-image: linear-gradient(to right, rgb(81, 206, 223), rgb(49, 92, 121), rgb(81, 206, 223));
+  border-image-slice: 1;
   text-align: center;
 }
 
@@ -236,7 +238,7 @@ footer a {
 /*---- Other ----*/
 hr {
   height: 1px;
-  background: linear-gradient(to right, rgb(81, 206, 223), rgb(49, 92, 121), rgb(81, 206, 223));;
+  background: linear-gradient(to right, rgb(81, 206, 223), rgb(49, 92, 121), rgb(81, 206, 223));
   /*color: #242424;
   background-color: #242424;
   border-bottom: 1px solid #242424;*/
