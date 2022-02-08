@@ -38,3 +38,16 @@ window.addEventListener("load", () => {
   content.className += " show";
   body.className += " scroll";
 });
+
+// Keybinds
+document.addEventListener("keydown", bind => {
+  bind.preventDefault();
+
+  if (bind.key.toLowerCase() === "1" && bind.altKey) {
+    window.location.replace("index.html");
+  } else if (bind.key.toLowerCase() === "2" && bind.altKey) {
+    window.location.replace("blender.html");
+  } else if (bind.key.toLowerCase() === "3" && bind.altKey) {
+    window.location.replace("biscuit.html");
+  }
+});
