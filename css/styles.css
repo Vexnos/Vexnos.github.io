@@ -276,7 +276,7 @@ img.render {
 }
 
 img.render:hover {
-  transform: scale(0.98);
+  transform: scale(1.02);
   transition: 0.3s ease all;
   cursor: pointer;
 }
@@ -373,7 +373,7 @@ img.render:hover {
   }
 }
 
-@media screen and (max-width: 1900px) {
+@media screen and (max-width: 1668px) { /*1900px*/
   body {
     background-image: url(../images/blackhole_doppler_website.png);
     background-size: 200%;
