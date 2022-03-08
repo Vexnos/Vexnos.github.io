@@ -40,7 +40,7 @@ window.addEventListener("load", () => {
 });
 
 // Keybinds
-document.addEventListener("keydown", bind => {
+/*document.addEventListener("keydown", bind => {
   bind.preventDefault();
 
   if (bind.key.toLowerCase() === "1" && bind.altKey) {
@@ -50,4 +50,4 @@ document.addEventListener("keydown", bind => {
   } else if (bind.key.toLowerCase() === "3" && bind.altKey) {
     window.location.replace("biscuit.html");
   }
-});
+});*/
