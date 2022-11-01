@@ -81,6 +81,30 @@ body {
   overflow-y: hidden;
 }
 
+@keyframes change {
+  0% {
+    background-image: url(../images/blackhole_doppler_website.png);
+  }
+  16% {
+    background-image: url(../images/CyroniaImproved_Render_cropped.png);
+  }
+  33% {
+    background-image: url(../images/Toross_Render_cropped.png);
+  }
+  50% {
+    background-image: url(../images/Saturn_Render_cropped.png);
+  }
+  67% {
+    background-image: url(../images/ZolNozh_ReRender_cropped.png);
+  }
+  84% {
+    background-image: url(../images/EarthCycles2_Render_cropped.png);
+  }
+  100% {
+    background-image: url(../images/blackhole_doppler_website.png);
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -388,6 +412,12 @@ img.render:hover {
     background-size: 100%;
     background-repeat: no-repeat;
     background-position-x: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    animation: change 30s infinite ease-in-out;
   }
 }
 
