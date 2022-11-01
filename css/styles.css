@@ -283,6 +283,14 @@ a img:hover {
   transition: 0.3s ease all;
 }
 
+header a img {
+  opacity: 1;
+}
+
+header a img:hover {
+  opacity: 1;
+}
+
 .block {
   display: inline-block;
   width: 1100px;
