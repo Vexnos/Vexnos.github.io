@@ -506,7 +506,7 @@ img.render:hover {
 
   @keyframes move-up {
     from {
-      height: 192px;
+      height: 256px;
     } to {
       height: 0px;
     }
@@ -516,7 +516,7 @@ img.render:hover {
     from {
       height: 0px;
     } to {
-      height: 192px;
+      height: 256px;
     }
   }
 
