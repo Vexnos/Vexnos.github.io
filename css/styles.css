@@ -614,7 +614,7 @@ img.render:hover {
 
   /* Nav Bar */
   nav ul .links.clicked {
-    height: 176px;
+    height: 236px;
     animation: 0.15s move-down linear;
   }
 
@@ -625,7 +625,7 @@ img.render:hover {
 
   @keyframes move-up {
     from {
-      height: 176px;
+      height: 236px;
     } to {
       height: 0px;
     }
@@ -635,7 +635,7 @@ img.render:hover {
     from {
       height: 0px;
     } to {
-      height: 192px;
+      height: 236px;
     }
   }
 
