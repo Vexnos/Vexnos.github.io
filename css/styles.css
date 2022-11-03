@@ -138,6 +138,11 @@ div.section {
   width: 1100px;
 }
 
+div.centered.paragraph {
+  width: 900px;
+  margin: auto;
+}
+
 iframe {
   top: 0;
   float: right;
@@ -468,6 +473,10 @@ img.render:hover {
   .block {
     width: 100%;
   }
+
+  div.centered.paragraph {
+    width: 500px;
+  }
 }
 
 /* Tablets */
@@ -655,5 +664,9 @@ img.render:hover {
 
   .modal {
     font-size: 12pt;
+  }
+
+  div.centered.paragraph {
+    width: 200px;
   }
 }
